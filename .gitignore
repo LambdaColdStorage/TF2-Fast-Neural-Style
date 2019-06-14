@@ -1,0 +1,6 @@
+__pycache__/*
+venv-tf2/*
+*.h5
+val/*
+logs/*
+output/*

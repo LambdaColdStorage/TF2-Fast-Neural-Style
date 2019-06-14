@@ -1,1 +1,36 @@
 # TF2-Fast-Neural-Style
+Implementation of Fast Neural Style in TensorFlow 2 
+
+
+### Installation
+```
+git clone https://github.com/lambdal/TF2-Fast-Neural-Style.git
+cd TF2-Fast-Neural-Style
+virtualenv venv-tf2
+. venv-tf2/bin/activate
+pip install tf-nightly-gpu-2.0-preview==2.0.0.dev20190611
+pip install Pillow
+
+python download_data.py \
+--data_url=https://s3-us-west-2.amazonaws.com/lambdalabs-files/mscoco_fns.tar.gz \
+--data_dir=~/demo/data
+```
+
+### Run the demo
+
+__Train__
+```
+python fast_neural_style.py train \
+--style_image_path=style_image/gothic.jpg \
+--train_csv_path=/home/ubuntu/demo/data/mscoco_fns/train2014.csv \
+--test_images_path=/home/ubuntu/demo/data/mscoco_fns/train2014/COCO_train2014_000000003348.jpg,/home/ubuntu/demo/data/mscoco_fns/val2014/COCO_val2014_000000138954.jpg,/home/ubuntu/demo/data/mscoco_fns/val2014/COCO_val2014_000000301397.jpg \
+--num_epochs=10 \
+--decay_epoch=8,10
+```
+
+__Inference__
+```
+python fast_neural_style.py infer \
+--style_image_path=style_image/gothic.jpg \
+--test_images_path=/home/ubuntu/demo/data/mscoco_fns/train2014/COCO_train2014_000000003348.jpg,/home/ubuntu/demo/data/mscoco_fns/val2014/COCO_val2014_000000138954.jpg,/home/ubuntu/demo/data/mscoco_fns/val2014/COCO_val2014_000000301397.jpg
+```
