@@ -34,3 +34,9 @@ python fast_neural_style.py infer \
 --style_image_path=style_image/gothic.jpg \
 --test_images_path=/home/ubuntu/demo/data/mscoco_fns/train2014/COCO_train2014_000000003348.jpg,/home/ubuntu/demo/data/mscoco_fns/val2014/COCO_val2014_000000138954.jpg,/home/ubuntu/demo/data/mscoco_fns/val2014/COCO_val2014_000000301397.jpg
 ```
+
+
+<p><a href="README/gothic.jpg" target="_blank"><img src="README/gothic.jpg" height="240px" style="max-width:100%;"></a>
+<a href="README/COCO_val2014_000000301397.jpg" target="_blank"><img src="README/COCO_val2014_000000301397.jpg" height="240px" style="max-width:100%;"></a>
+<a href="README/output_COCO_val2014_000000301397.jpg" target="_blank"><img src="README/output_COCO_val2014_000000301397.jpg" height="240px" style="max-width:100%;"></a>
+</p>
