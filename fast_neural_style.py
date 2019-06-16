@@ -97,7 +97,7 @@ def main():
 
 
   if args.mode == "infer":
-    model_output.load_weights(STYLE_NAME + '_model.h5')
+    model_output.load_weights('model/' + STYLE_NAME + '_model.h5')
     for key in test_img:
       x = test_img[key]
       img = model_output.predict(x)[0]
@@ -219,7 +219,7 @@ def main():
       train_dataset,
       epochs=args.num_epochs,
       callbacks=[lr_schedule_callback, test_callback, tensorboard_callback])
-    model_output.save_weights(STYLE_NAME + '_model.h5')
+    model_output.save_weights('model/' + STYLE_NAME + '_model.h5')
 
 
 if __name__ == "__main__":
