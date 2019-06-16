@@ -37,9 +37,9 @@ python fast_neural_style.py infer \
 
 
 <p>
-<a href="README/gothic.jpg" target="_blank"><img src="README/gothic.jpg" height="255px" style="max-width:100%;"></a>
-<a href="README/COCO_val2014_000000301397.jpg" target="_blank"><img src="README/COCO_val2014_000000301397.jpg" height="255px" style="max-width:100%;"></a>
-<a href="README/output_COCO_val2014_000000301397.jpg" target="_blank"><img src="README/output_COCO_val2014_000000301397.jpg" height="255px" style="max-width:100%;"></a>
+<a href="README/gothic.jpg" target="_blank"><img src="README/gothic.jpg" height="240px" style="max-width:100%;"></a>
+<a href="README/COCO_val2014_000000301397.jpg" target="_blank"><img src="README/COCO_val2014_000000301397.jpg" height="240px" style="max-width:100%;"></a>
+<a href="README/output_COCO_val2014_000000301397.jpg" target="_blank"><img src="README/output_COCO_val2014_000000301397.jpg" height="240px" style="max-width:100%;"></a>
 <a href="README/wave_crop.jpg" target="_blank"><img src="README/wave_crop.jpg" height="200px" style="max-width:100%;"></a>
 <a href="README/chicago.jpg" target="_blank"><img src="README/chicago.jpg" height="200px" style="max-width:100%;"></a>
 <a href="README/output_chicago.jpg" target="_blank"><img src="README/output_chicago.jpg" height="200px" style="max-width:100%;"></a>
