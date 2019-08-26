@@ -8,8 +8,9 @@ git clone https://github.com/lambdal/TF2-Fast-Neural-Style.git
 cd TF2-Fast-Neural-Style
 virtualenv venv-tf2
 . venv-tf2/bin/activate
-pip install tf-nightly-gpu-2.0-preview==2.0.0.dev20190611
+pip install tensorflow==2.0.0-rc0
 pip install Pillow
+pip install opencv-python
 
 python download_data.py \
 --data_url=https://s3-us-west-2.amazonaws.com/lambdalabs-files/mscoco_fns.tar.gz \
@@ -35,6 +36,14 @@ python fast_neural_style.py infer \
 --test_images_path=/home/ubuntu/demo/data/mscoco_fns/train2014/COCO_train2014_000000003348.jpg,/home/ubuntu/demo/data/mscoco_fns/val2014/COCO_val2014_000000138954.jpg,/home/ubuntu/demo/data/mscoco_fns/val2014/COCO_val2014_000000301397.jpg
 ```
 
+__Camera Demo__
+
+```
+python fast_neural_style.py camera \
+--style_image_path=style_image/gothic.jpg
+```
+
+Press 'q' to quit.
 
 <p>
 <a href="README/gothic.jpg" target="_blank"><img src="README/gothic.jpg" height="240px" style="max-width:100%;"></a>

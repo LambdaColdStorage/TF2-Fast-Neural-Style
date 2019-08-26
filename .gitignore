@@ -3,3 +3,4 @@ venv-tf2/*
 val/*
 logs/*
 output/*
+*.pyc
